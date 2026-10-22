@@ -1,0 +1,144 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f12;
+    color: #e8e8e8;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Заголовок pospolite */
+.brand-name {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+}
+
+/* Контейнер */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Список товаров */
+.items-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    background-color: #1a1a1f;
+    border: 1px solid #2a2a32;
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+/* Анимация появления */
+.item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Эффект при наведении */
+.item:hover {
+    background-color: #22222a;
+    border-color: #3a3a45;
+    transform: translateX(5px);
+}
+
+/* Выделение при клике */
+.item.active {
+    border-color: #4d9fff;
+    background-color: #1e2a3a;
+}
+
+.item-emoji {
+    font-size: 1.6rem;
+    width: 35px;
+    text-align: center;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: #8a8a95;
+}
+
+.item-count {
+    background-color: #2a2a32;
+    color: #4d9fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Общий счётчик */
+.total-block {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1f;
+    border-radius: 10px;
+    border: 1px solid #2a2a32;
+}
+
+.total-text {
+    color: #8a8a95;
+    font-size: 0.95rem;
+}
+
+.total-number {
+    color: #4d9fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 600px) {
+    .brand-name {
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 1.4rem;
+    }
+}

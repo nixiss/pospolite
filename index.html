@@ -3,9 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pospolite</title>     
+    <title>pospolite — Ассортимент</title>
+    
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем наш CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="brand-name">pospolite</div>
+
+    <h1 class="brand-name">pospolite</h1>
+
+    <div class="container">
+        <h2 class="section-title">Ассортимент</h2>
+
+        <ul class="items-list" id="itemsList">
+            <li class="item" data-count="3">
+                <span class="item-emoji">🧊</span>
+                <div class="item-info">
+                    <div class="item-name">Кулеры</div>
+                    <div class="item-desc">Системы охлаждения</div>
+                </div>
+                <span class="item-count">3 шт.</span>
+            </li>
+
+            <li class="item" data-count="3">
+                <span class="item-emoji">⚙️</span>
+                <div class="item-info">
+                    <div class="item-name">Процессоры</div>
+                    <div class="item-desc">CPU для ПК</div>
+                </div>
+                <span class="item-count">3 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">⌨️</span>
+                <div class="item-info">
+                    <div class="item-name">Клавиатура</div>
+                    <div class="item-desc">Устройство ввода</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="3">
+                <span class="item-emoji">🖱️</span>
+                <div class="item-info">
+                    <div class="item-name">Мышки</div>
+                    <div class="item-desc">Компьютерные мыши</div>
+                </div>
+                <span class="item-count">3 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">🔌</span>
+                <div class="item-info">
+                    <div class="item-name">Блок питания</div>
+                    <div class="item-desc">Мощность: 450W</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">💾</span>
+                <div class="item-info">
+                    <div class="item-name">RAM 2 GB</div>
+                    <div class="item-desc">2 GB × 1</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">💾</span>
+                <div class="item-info">
+                    <div class="item-name">RAM DDR2 / DDR3</div>
+                    <div class="item-desc">2 GB × 1 и 1 GB × 1</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">💾</span>
+                <div class="item-info">
+                    <div class="item-name">RAM 4 GB</div>
+                    <div class="item-desc">4 GB × 1</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">📦</span>
+                <div class="item-info">
+                    <div class="item-name">Корпус</div>
+                    <div class="item-desc">Системный блок</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="2">
+                <span class="item-emoji">🖥️</span>
+                <div class="item-info">
+                    <div class="item-name">Мониторы</div>
+                    <div class="item-desc">Экраны для ПК</div>
+                </div>
+                <span class="item-count">2 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">🎮</span>
+                <div class="item-info">
+                    <div class="item-name">GPU</div>
+                    <div class="item-desc">Видеокарта</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+
+            <li class="item" data-count="1">
+                <span class="item-emoji">🔊</span>
+                <div class="item-info">
+                    <div class="item-name">Колонки</div>
+                    <div class="item-desc">Акустическая система</div>
+                </div>
+                <span class="item-count">1 шт.</span>
+            </li>
+        </ul>
+
+        <div class="total-block">
+            <span class="total-text">Всего позиций:</span>
+            <span class="total-number" id="totalCount">0</span>
+        </div>
+    </div>
+
+    <!-- Подключаем наш JS -->
+    <script src="script.js"></script>
+
 </body>
 </html>
